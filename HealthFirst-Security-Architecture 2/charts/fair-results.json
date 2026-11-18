@@ -1,0 +1,217 @@
+{
+  "iterations": 100000,
+  "program_cost_musd": 13.8,
+  "scenarios": [
+    {
+      "id": "S1",
+      "name": "Enterprise ransomware with clinical downtime & extortion",
+      "risks": "R01, R09, R14",
+      "lef_inh": [
+        0.08,
+        0.25,
+        0.6
+      ],
+      "lm_inh": [
+        20,
+        65,
+        250
+      ],
+      "lef_res": [
+        0.02,
+        0.06,
+        0.15
+      ],
+      "lm_res": [
+        6,
+        18,
+        80
+      ],
+      "ale_inh": 24.63,
+      "ale_res": 1.79,
+      "p90_inh": 102.61,
+      "p90_res": 0.0
+    },
+    {
+      "id": "S2",
+      "name": "Large-scale PHI exfiltration (external / cloud)",
+      "risks": "R02, R07, R10",
+      "lef_inh": [
+        0.2,
+        0.5,
+        1.2
+      ],
+      "lm_inh": [
+        3,
+        10,
+        60
+      ],
+      "lef_res": [
+        0.05,
+        0.15,
+        0.4
+      ],
+      "lm_res": [
+        2,
+        6,
+        30
+      ],
+      "ale_inh": 9.71,
+      "ale_res": 1.64,
+      "p90_inh": 31.13,
+      "p90_res": 7.45
+    },
+    {
+      "id": "S3",
+      "name": "IoMT compromise affecting clinical operations",
+      "risks": "R03",
+      "lef_inh": [
+        0.05,
+        0.15,
+        0.4
+      ],
+      "lm_inh": [
+        1,
+        6,
+        40
+      ],
+      "lef_res": [
+        0.01,
+        0.04,
+        0.12
+      ],
+      "lm_res": [
+        0.5,
+        3,
+        20
+      ],
+      "ale_inh": 1.93,
+      "ale_res": 0.26,
+      "p90_inh": 8.39,
+      "p90_res": 0.0
+    },
+    {
+      "id": "S4",
+      "name": "Patient / clinician account takeover on telemedicine",
+      "risks": "R04, R11",
+      "lef_inh": [
+        1.0,
+        3.0,
+        8.0
+      ],
+      "lm_inh": [
+        0.1,
+        0.5,
+        3
+      ],
+      "lef_res": [
+        0.3,
+        1.0,
+        3.0
+      ],
+      "lm_res": [
+        0.05,
+        0.2,
+        1
+      ],
+      "ale_inh": 2.97,
+      "ale_res": 0.38,
+      "p90_inh": 5.87,
+      "p90_res": 0.95
+    },
+    {
+      "id": "S5",
+      "name": "Business-associate / third-party compromise",
+      "risks": "R06",
+      "lef_inh": [
+        0.1,
+        0.3,
+        0.7
+      ],
+      "lm_inh": [
+        2,
+        15,
+        90
+      ],
+      "lef_res": [
+        0.08,
+        0.25,
+        0.6
+      ],
+      "lm_res": [
+        1,
+        6,
+        40
+      ],
+      "ale_inh": 8.48,
+      "ale_res": 3.02,
+      "p90_inh": 33.87,
+      "p90_res": 12.71
+    },
+    {
+      "id": "S6",
+      "name": "Insider privacy violations (inappropriate access)",
+      "risks": "R05",
+      "lef_inh": [
+        2.0,
+        6.0,
+        15.0
+      ],
+      "lm_inh": [
+        0.02,
+        0.15,
+        2
+      ],
+      "lef_res": [
+        1.0,
+        3.0,
+        8.0
+      ],
+      "lm_res": [
+        0.01,
+        0.08,
+        1
+      ],
+      "ale_inh": 2.99,
+      "ale_res": 0.78,
+      "p90_inh": 5.37,
+      "p90_res": 1.58
+    }
+  ],
+  "total_inh": {
+    "mean": 50.72,
+    "p50": 30.16,
+    "p90": 131.19,
+    "p95": 171.37,
+    "p99": 252.56,
+    "prob_gt_20": 0.612,
+    "prob_gt_50": 0.343,
+    "prob_gt_100": 0.16
+  },
+  "total_res": {
+    "mean": 7.87,
+    "p50": 2.01,
+    "p90": 22.42,
+    "p95": 30.98,
+    "p99": 50.96,
+    "prob_gt_20": 0.123,
+    "prob_gt_50": 0.011,
+    "prob_gt_100": 0.0
+  },
+  "total_res_net_insurance": {
+    "mean": 3.83,
+    "p50": 2.01,
+    "p90": 9.25,
+    "p95": 11.21,
+    "p99": 15.93,
+    "prob_gt_20": 0.002,
+    "prob_gt_50": 0.0,
+    "prob_gt_100": 0.0
+  },
+  "insurance": {
+    "retention": 5.0,
+    "limit": 50.0,
+    "premium": 3.2
+  },
+  "ale_reduction": 42.85,
+  "rosi": 2.11
+}
